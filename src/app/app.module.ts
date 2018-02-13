@@ -9,14 +9,9 @@ import { FooterComponent } from "./footer/footer.component";
 import { HelloWorldComponent } from "./hello-world/hello-world.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HelloWorldComponent
-  ],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HelloWorldComponent],
   imports: [BrowserModule, NgbModule.forRoot()],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
