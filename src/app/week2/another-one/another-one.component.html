@@ -3,3 +3,13 @@
 </p>
 
 <app-fancy-directives></app-fancy-directives>
+
+<h3>Highligh some stuff on hover</h3>
+<div appHighlighter [color]="'yellow'">{{ 'yo' | uselessEncoder }}</div>
+<div appHighlighter [color]="'red'">{{ 'hi' | uselessEncoder }}</div>
+<div appHighlighter [color]="'blue'">{{ 'hello' | uselessEncoder }}</div>
+
+<h3>Filter an array with a pipe</h3>
+<li *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8] | isEven">
+  {{x}}
+</li>
